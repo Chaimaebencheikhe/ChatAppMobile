@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "608086485984",
+    "project_id": "chatapp-ef947",
+    "storage_bucket": "chatapp-ef947.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608086485984:android:87d6af75a80073f10ad985",
+        "android_client_info": {
+          "package_name": "com.example.chatami"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGvAWdmejd0pSo2wtQjGYaAunxWHX1HNA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
