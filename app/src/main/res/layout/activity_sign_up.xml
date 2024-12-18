@@ -9,6 +9,7 @@
     android:overScrollMode="never"
     android:padding="24dp"
     android:scrollbars="none"
+    android:background="#7AB2D3"
     tools:context=".activities.SignInActivity">
 
     <LinearLayout
@@ -16,15 +17,18 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:orientation="vertical">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
+            android:fontFamily="@font/flamenco_light"
             android:text="Create New  Account !"
             android:textColor="@color/primary_text"
             android:textSize="18dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
         <FrameLayout
+            android:id="@+id/layoutimage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp">
@@ -39,6 +43,7 @@
             />
 
             <TextView
+                android:id="@+id/textaddimage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -107,24 +112,40 @@
             android:paddingEnd="16dp"
             android:textColor="@color/primary_text"
             android:textSize="13dp"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:animateLayoutChanges="true">
+
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="20dp"
             android:text="Sign Up "
+            android:id="@+id/signupbtn"
             android:textColor="@color/white"
             android:textSize="13dp"
             android:textStyle="bold"
             app:cornerRadius="8dp" />
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:visibility="invisible"/>
+        </FrameLayout>
+
         <TextView
-            android:id="@+id/signin"
+            android:id="@+id/textsignup"
             android:layout_width="wrap_content"
-            android:layout_marginTop="30dp"
             android:layout_height="wrap_content"
-            android:text="Sign In  "
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/flamenco_light"
+            android:text="Already Have Account  "
             android:textColor="@color/primary"
             android:textSize="13dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
     </LinearLayout>
 </ScrollView>

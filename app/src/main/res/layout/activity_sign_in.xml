@@ -7,30 +7,22 @@
     android:layout_height="match_parent"
     android:clipToPadding="false"
     android:overScrollMode="never"
+    android:background="#7AB2D3"
     android:padding="24dp"
     android:scrollbars="none"
     tools:context=".activities.SignInActivity">
+
     <LinearLayout
+        android:paddingTop="150dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:orientation="vertical">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Welcome_back !"
-        android:textColor="@color/primary_text"
-        android:textSize="18dp"
-        android:textStyle="bold"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Log In To Continue !"
-        android:textColor="@color/primary_text"
-        android:textSize="12dp"
-        android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/img_1" />
 
         <EditText
             android:id="@+id/inputEmail"
@@ -45,8 +37,7 @@
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:textColor="@color/primary_text"
-            android:textSize="13dp"/>
-
+            android:textSize="13dp" />
 
         <EditText
             android:id="@+id/inputPassword"
@@ -62,25 +53,39 @@
             android:paddingEnd="16dp"
             android:textColor="@color/primary_text"
             android:textSize="13dp"/>
-
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="match_parent"
-            android:id="@+id/textcreateaccount"
-            android:layout_height="60dp"
-            android:layout_marginTop="20dp"
-            android:text="Sign In "
-            android:textColor="@color/white"
-            android:textSize="13dp"
-            android:textStyle="bold"
-            app:cornerRadius="8dp" />
-        <TextView
-            android:id="@+id/crateNewAccount"
+        <FrameLayout
+            android:id="@+id/layoutimage"
             android:layout_width="wrap_content"
-            android:layout_marginTop="50dp"
             android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/textcreateaccount"
+                android:layout_width="253dp"
+                android:layout_height="60dp"
+                android:text="Sign In "
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                app:cornerRadius="8dp" />
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:visibility="invisible"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/buttonAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/flamenco_light"
             android:text="Create New Account"
             android:textColor="@color/primary"
             android:textSize="13dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
     </LinearLayout>
 </ScrollView>

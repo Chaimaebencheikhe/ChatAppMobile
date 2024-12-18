@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primary">#402D8B</color>
-    <color name="primary_dark">#553CB9</color>
-    <color name="primary_text">#7A65CD</color>
-    <color name="secondry_text">#CAC1EB</color>
+    <color name="primary">#112D4E</color>
+    <color name="primary_dark">#3F72AF</color>
+    <color name="primary_text">#001A6E</color>
+    <color name="secondry_text">#F9F7F7</color>
     <color name="white">#FFFFFF</color>
     <color name="input_background">#F5F5F5</color>
     <color name="icon_background">#C4CBCA</color>
     <color name="error">#CD133B</color>
-    <color name="received_message_background">#0E0A1F</color>
+    <color name="received_message_background">#001A6E</color>
 
 
 </resources>

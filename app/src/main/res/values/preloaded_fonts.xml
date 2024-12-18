@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/bacasime_antique</item>
+        <item>@font/bigshot_one</item>
+        <item>@font/comic_neue_light_italic</item>
+        <item>@font/flamenco_light</item>
+        <item>@font/itim</item>
+        <item>@font/la_belle_aurore</item>
+        <item>@font/lobster</item>
+        <item>@font/mrs_sheppards</item>
+        <item>@font/splash</item>
+        <item>@font/style_script</item>
+    </array>
+</resources>

@@ -2,7 +2,6 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.google.gms.google.services)
 
-
 }
 
 android {
@@ -15,7 +14,7 @@ android {
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-
+        multiDexEnabled =true
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -33,7 +32,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
     buildFeatures {
-        viewBinding; true
+        viewBinding= true
     }
 }
 
@@ -44,6 +43,7 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation(libs.firebase.messaging)
+    implementation(libs.firebase.firestore)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
@@ -53,5 +53,11 @@ dependencies {
     //Rounded Image
     implementation("com.makeramen:roundedimageview:2.3.0")
     implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
+    //multidex
+    implementation ("androidx.multidex:multidex:2.0.1")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-scalars:2.9.0")
+    implementation ("androidx.constraintlayout:constraintlayout:2.1.4") // ou la dernière version disponible
+
 
 }
